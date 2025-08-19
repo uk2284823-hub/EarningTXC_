@@ -1,0 +1,692 @@
+
+<html lang="en">
+
+<head>
+
+    
+<meta charset="UTF-8">
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<title>
+@EARNINGTXC
+</title>
+
+
+    
+<style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #0a0e27;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .svg-header {
+            width: 100%
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .svg-header svg {
+            width: 100%
+            max-width: 800px;
+            height: auto;
+        }
+
+        .container {
+            width: 100%
+            max-width: 800px;
+            background: linear-gradient(145deg, #1b1f3a, #232847);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #ff4081;
+            text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081;
+        }
+
+        .result-box {
+            padding: 20px;
+            background: linear-gradient(145deg, #232847, #1b1f3a);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .result-box span {
+            font-size: 22px;
+            color: #ff4081;
+            font-weight: bold;
+        }
+
+        .refresh-button {
+            padding: 12px 20px;
+            background: #00d4ff;
+            color: #0a0e27;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 212, 255, 0.5);
+            transition: all 0.3s;
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+
+        .refresh-button:hover {
+            background: #00a3cc;
+            box-shadow: 0 6px 15px rgba(0, 212, 255, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .history-title {
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        .table-container {
+            width: 100%
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%
+            border-collapse: collapse;
+            background: linear-gradient(145deg, #1b1f3a, #232847);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        th {
+            background-color: #1e233b;
+            color: #00d4ff;
+            text-shadow: 0 0 5px #00d4ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #232847;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #1b1f3a;
+        }
+
+        tr:hover {
+            background-color: #2b324d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .result-box {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+            .refresh-button {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+
+        svg text {
+          
+            text-transform: uppercase;
+            animation: stroke 5s infinite alternate;
+            stroke-width: 10;
+            stroke: #365fa0;
+            font-size:170px;
+        }
+
+        @keyframes stroke {
+            0% {
+                fill: rgba(72,138,20,0);
+                stroke: rgba(54,95,160,1);
+                stroke-dashoffset: 25%
+                stroke-dasharray: 0 50%
+                stroke-width: 5;
+            }
+            70% {
+                fill: rgba(72,138,20,0);
+                stroke: rgba(54,95,160,1);
+            }
+            80% {
+                fill: rgba(72,138,20,0);
+                stroke: rgba(54,95,160,1);
+                stroke-width: 2;
+            }
+            100% {
+                fill: rgba(72,138,204,1);
+                stroke: rgba(54,95,160,0);
+                stroke-dashoffset: -25%
+                stroke-dasharray: 50% 0;
+                stroke-width: 0;
+            }
+        }
+    
+</style>
+
+
+</head>
+
+
+<body>
+
+
+    
+<!-- Content Section -->
+
+    
+<div class="container">
+
+      
+<br>
+
+       
+<div class="svg-header">
+
+        
+<svg viewBox="0 0 1320 300">
+
+            
+<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+
+                @EARNINGTXC
+            
+</text>
+
+        
+</svg>
+
+    
+</div>
+
+    
+<br>
+
+        
+<!--
+<h2>
+WELCOME BACK
+</h2>
+-->
+
+        
+<div class="result-box">
+
+            Period: 
+<span id="period-number">
+20250318100010747
+</span>
+
+        
+</div>
+
+        
+<div class="result-box">
+
+            RESULT: 
+<span id="result">
+BIG(7)
+</span>
+
+        
+</div>
+
+        
+<!--button class="refresh-button" onclick="refreshPrediction()">
+Refresh
+</button-->
+
+    
+</div>
+
+
+    
+<div class="container">
+
+        
+<h2 class="history-title">
+Recent History
+</h2>
+
+        
+<div class="table-container">
+
+            
+<table>
+
+                
+<thead>
+
+                    
+<tr>
+
+                        
+<th>
+Period Number
+</th>
+
+                        
+<th>
+Number
+</th>
+
+                        
+<th>
+Big/Small
+</th>
+
+                        
+<th>
+Color
+</th>
+
+                    
+</tr>
+
+                
+</thead>
+
+                
+<tbody id="history-list">
+
+<tr>
+
+<td>
+20250318100010746
+</td>
+
+<td>
+0
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED,VIOLET
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010745
+</td>
+
+<td>
+8
+</td>
+
+<td>
+BIG
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010744
+</td>
+
+<td>
+2
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010743
+</td>
+
+<td>
+6
+</td>
+
+<td>
+BIG
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010742
+</td>
+
+<td>
+4
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010741
+</td>
+
+<td>
+4
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010740
+</td>
+
+<td>
+4
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010739
+</td>
+
+<td>
+1
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+GREEN
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010738
+</td>
+
+<td>
+4
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+20250318100010737
+</td>
+
+<td>
+2
+</td>
+
+<td>
+SMALL
+</td>
+
+<td>
+RED
+</td>
+
+</tr>
+
+</tbody>
+
+            
+</table>
+
+        
+</div>
+
+    
+</div>
+
+    
+<script>
+
+        async function fetchCurrentGameIssue() {
+            const apiUrl = 'https://api.bdg88zf.com/api/webapi/GetGameIssue';
+            const requestData = {
+                "typeId": 1,
+                "language": 0,
+                "random": "40079dcba93a48769c6ee9d4d4fae23f",
+                "signature": "D12108C4F57C549D82B23A91E0FA20AE",
+                "timestamp": 1727792520
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=UTF-8',
+                        'Accept': 'application/json, text/plain, */*'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.code === 0) {
+                        updateCurrentPrediction(data.data.issueNumber);
+                    } else {
+                        console.error('Failed to fetch game issue:', data.msg);
+                    }
+                } else {
+                    console.error('Network response was not ok:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
+        function updateCurrentPrediction(issueNumber) {
+            const storedPredictionPeriod = localStorage.getItem('currentPeriod');
+            const storedPredictionResult = localStorage.getItem('predictionResult');
+
+            if (storedPredictionPeriod === issueNumber) {
+                document.getElementById('result').textContent = storedPredictionResult;
+            } else {
+                const prediction = generatePrediction();
+                localStorage.setItem('currentPeriod', issueNumber);
+                localStorage.setItem('predictionResult', prediction);
+                document.getElementById('result').textContent = prediction;
+            }
+            document.getElementById('period-number').textContent = issueNumber;
+        }
+
+        function generatePrediction() {
+            const randomNumber = Math.floor(Math.random() * 10);
+            const predictionType = randomNumber 
+<= 4 ? 'SMALL' : 'BIG';
+            return `${predictionType}(${randomNumber})`;
+        }
+
+        async function fetchPreviousResults() {
+            const apiUrl = 'https://api.bdg88zf.com/api/webapi/GetNoaverageEmerdList';
+            const requestData = {
+                "pageSize": 10,
+                "pageNo": 1,
+                "typeId": 1,
+                "language": 0,
+                "random": "c2505d9138da4e3780b2c2b34f2fb789",
+                "signature": "7D637E060DA35C0C6E28DC6D23D71BED",
+                "timestamp": 1727792520
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=UTF-8',
+                        'Accept': 'application/json, text/plain, */*'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.code === 0) {
+                        updateHistoryTable(data.data.list);
+                    } else {
+                        console.error('Failed to fetch previous results:', data.msg);
+                    }
+                } else {
+                    console.error('Network response was not ok:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error fetching previous results:', error);
+            }
+        }
+
+        function updateHistoryTable(historyList) {
+            const historyTable = document.getElementById('history-list');
+            historyTable.innerHTML = '';
+
+            historyList.forEach(result =>
+ {
+                const { issueNumber, number, colour } = result;
+                const size = number 
+<= 4 ? 'SMALL' : 'BIG';
+
+                const row = document.createElement('tr');
+
+                const issueCell = document.createElement('td');
+                issueCell.textContent = issueNumber;
+                row.appendChild(issueCell);
+
+                const numberCell = document.createElement('td');
+                numberCell.textContent = number;
+                row.appendChild(numberCell);
+
+                const sizeCell = document.createElement('td');
+                sizeCell.textContent = size;
+                row.appendChild(sizeCell);
+
+                const colourCell = document.createElement('td');
+                colourCell.textContent = colour.toUpperCase();
+                row.appendChild(colourCell);
+
+                historyTable.appendChild(row);
+            });
+        }
+
+        async function refreshPrediction() {
+            await fetchCurrentGameIssue();
+            await fetchPreviousResults();
+        }
+// credit SUPIRIOR Rahul
+        document.addEventListener("DOMContentLoaded", function () {
+            refreshPrediction();
+        });
+    
+</script>
+
+
+
+
+</body>
+
+</html>
